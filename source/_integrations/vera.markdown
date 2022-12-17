@@ -77,3 +77,9 @@ Please note that some Vera sensors (such as _motion_ and _flood_  sensors) are _
 Home Assistant will display the state of these sensors regardless of the _armed_ state.
 
 To allow you to change the _armed state_ - Home Assistant will create a switch as well as a sensor for each _Armable_ sensor.
+
+### Switches with integrated Power Meter functions
+
+<div class='note'>
+  The `vera` platform will automatically detect any `switch` that provides a power meter. These will automatically be added as power and energy sensors to Home Assistant. This function was previously exposed as an attribute of the switch.
+</div>
